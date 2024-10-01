@@ -1,0 +1,9 @@
+<div [class]="'rounded-md inline-flex relative h-full w-full p-4 items-start flex-col ' + bgColor">
+    @if (!subTitleDown) {
+        <p class="text-slate-50 z-50 text-xs">{{ subTitle }}</p>
+    }
+    <h3 class="text-slate-50 z-50 m-2 text-sm">{{ title }}</h3>
+    @if(subTitleDown) {
+        <p class="text-slate-50 z-50 text-xs">{{ subTitle }}</p>
+    }
+</div>
